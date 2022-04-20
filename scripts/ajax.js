@@ -3,7 +3,7 @@ $("#button3").click(function(){
   console.log("click");
 
 
-  let url = "sample.json";
+  let url = "data.json";
 
   $.ajax({
 

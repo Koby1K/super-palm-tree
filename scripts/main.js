@@ -42,7 +42,7 @@ function jget() {
 
   console.log("in jget");
   // (A) FETCH REQUEST
-  fetch("sample.json")
+  fetch("data.json")
   // (B) RETURN SERVER RESPONSE AS TEXT
   .then((result) => {
           console.log("poopy");

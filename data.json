@@ -1,9 +1,9 @@
 {
-  "firstName": "Alex",
-  "lastName": "Doe",
+  "fname": "Alex",
+  "lname": "Doe",
   "date": "2022-04-19T19:37",
-  "phoneNumber": "+1 (256) 123-4567",
-  "lNumber": "L00000000",
-  "userName":"kingram369",
+  "pnum": "+1 (256) 123-4567",
+  "lnum": "L00000000",
+  "usern":"kingram369",
   "myInput":"abcdefg1"
 }

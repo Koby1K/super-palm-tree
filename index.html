@@ -11,44 +11,48 @@
  
 <body>
   <h2>Koby's Sports Survey</h2>
+  <button class="btn btn-secondary" id='button3'>Load JSON Data</button><br><br>
 
   <!-- First Card: Personal Info -->
  <div class="card">
- <form id="form" onsubmit="return false;">
+ <form id="form">
     <h5>Please Enter Your Contact Information:</h5>
 
 <!-- Text Input -->
-      <label id="fname">First name:</label>
-      <input type="text" id="fname1" name="fname" value="" placeholder='John'><br><br>
-   
-      <label id="lname">Last name:</label>
-      <input type="text" id="lname1" name="lname" value="" placeholder='Doe'><br><br>
+<label>First name:</label>
+<input type="text" id="fname" name="fname" value="" placeholder='John'><br><br>
 
-<!-- Date Time Input -->
-      <label id="start">Today's Date:</label>
-      <input type="datetime-local" id="date" name="date" value=""><br><br>
-   
-      <label id='pnum'>Phone Number:</label>
-      <input type="tel" id='pnum1' name='pnum' value='' placeholder='+1 (234) 567-8910'><br><br>
-   
-      <label id='lnum'>L Number:</label>
-      <input type="text" id='lnum1' name='lnum' value='' placeholder='L12345678'><br><br>
-   
-      <label id='usern'>User Name:</label>
-      <input type="text" id='usern1' name='usern' value='' placeholder='jdoe71'><br><br>
-   
-      <label id='pass'>Password:</label>
-      <input type="password" value="" id="pass1" placeholder='BigChicken5'><br><br>
+<label>Last name:</label>
+<input type="text" id="lname" name="lname" value="" placeholder='Doe'><br><br>
+
+<label>Today's Date:</label>
+<input type="datetime-local" id="date" name="date" value=""><br><br>
+
+<label>Phone Number:</label>
+<input type="tel" id='pnum' name='pnum' value='' placeholder='+1 (234) 567-8910'><br><br>
+
+<label>L Number:</label>
+<input type="text" id='lnum' name='lnum' value='' placeholder='L12345678'><br><br>
+
+<label>User Name:</label>
+<input type="text" id='usern' name='usern' value='' placeholder='jdoe71'><br><br>
+
+<label>Password:</label>
+<input type="password" value="" id="myInput" placeholder='BigChicken5'><br><br>
+
       
 <!-- Submit and Reset Buttons -->
-      <input type="submit" value="Submit">
-      <input type="reset">
+<button class="btn btn-secondary" id='button1'>Submit</button>
+<input type="reset">
+
+<p id="greetingOutput"></p><br>
+
   </form>
   </div>
   
 <!-- Second Card: Survey -->
   <div class="card"> 
-  <form id="form2" onsubmit="return false;">
+  <form id="form2">
 
     <h5>Survey:</h5><br>
 
@@ -63,7 +67,7 @@
       <input type='checkbox' name='MLS' value=''>
       <label id='mls1'>Major League Soccer</label><br>
       <input type='checkbox' name='NASCAR' value=''>
-      <label id='nascar1'>Hiking</label><br><br>
+      <label id='nascar1'>NASCAR</label><br><br>
   
 <!-- Radio Input -->
     <p>How much time do you usually watching your selected sports during the week?</p>
@@ -88,15 +92,23 @@
     <input type='text' id='text' value='' placeholder='Ex. Rome, Italy'><br><br>
     
 <!-- Submit and Reset Buttons -->
-  <input type="submit" value="Submit">
-  <input type="reset"><br><br>
+<button class="btn btn-secondary" id='button2'>Submit</button>
+<input type="reset">
 
+</form>
+</div>
+
+<footer>
   <a href='https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkobyingram11.github.io%2Fsuper-palm-tree%2F' target='_blank'>Nu Validator</a><br>
   <a href='https://github.com/kobyingram11/super-palm-tree' target='_blank'>Hotel Repo</a>
-   
-  </form>
-  </div>
+</footer>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="./scripts/ajax.js"></script>
+<script src="./scripts/main.js"></script>
+
   
 </body>
-  
 </html>

@@ -8,7 +8,6 @@
 <link rel='stylesheet' href="./style/style.css">
 </head>
 
- 
 <body>
   <h2>Koby's Sports Survey</h2>
   <button class="btn btn-secondary" id='JSONbutton'>Load JSON (Click Me)</button><br><br>
@@ -37,10 +36,9 @@
 
 <label>Password:</label>
 <input type="password" value="" id="passWord" placeholder='TheGoat23'><br><br>
-
       
 <!-- Submit and Reset Buttons -->
-<button class="btn btn-secondary" id='button1'>Submit</button>
+<button class="btn btn-secondary" id='submitbtn1'>Submit</button>
 <input type="reset">
 
 <p id="greetingOutput"></p><br>
@@ -79,9 +77,9 @@
     </div> 
 
 <!-- Dropdown Input -->
-    <p>How much time do you usually watching your selected sports during the week?</p>
 
-      <select name="dest" id="dest">
+    <label for ="hours-watched">How much time do you usually watching your selected sports during the week?</label>
+      <select name="hours-watched" id="hours-watched">
         <option value="sel">Select</option>
         <option value="Leisurely Fan">3-5 Hours</option>
         <option value="Fanatic">6-9 Hours</option>
@@ -94,7 +92,7 @@
     <input type='text' id='text' value='' placeholder='Ex. Los Angeles, California'><br><br>
     
 <!-- Submit and Reset Buttons -->
-<button class="btn btn-secondary" id='button2'>Submit</button>
+<button class="btn btn-secondary" id='submitbtn2'>Submit</button>
 <input type="reset">
 
 </form>

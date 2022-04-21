@@ -3,24 +3,24 @@ let selectEl = document.getElementById('select-list');
 
 selectEl.addEventListener('change', (e) => {
   if (e.target.value == 'no') {
-    document.getElementById('txt-custom').style.display = 'block';
+    document.getElementById('txt-custom').style.display = 'inline-block';
   } else {
-    document.getElementById('txt-custom').style.display = 'none';
+    document.getElementById('txt-custom').style.display = 'block';
   }
 });
 
 
 $(document).ready(function () {
   // alert("webpage is ready");
-  console.log("webpage is up and running...");
+  console.log("webpage is up and running.");
 
   let Info = "";
 
-  $("#button1").click(function (e) {
+  $("#submitbtn1").click(function (e) {
     e.preventDefault(); 
     Info += "First Name: " + $("#fname").val() + "<br/> ";
     Info += "Last Name: " + $("#lname").val() + "<br/> ";
-    Info += "Acquired Date and Time: " + $("#date").val() + "<br/> ";
+    Info += "Today's Date: " + $("#date").val() + "<br/> ";
     Info += "Phone Number: " + $("#pnum").val() + "<br/> ";
     Info += "User Name: " + $("#usern").val() + "<br/> ";
     Info += "Password: " + $("#passWord").val() + "<br/> ";
@@ -39,9 +39,9 @@ $(document).ready(function () {
 function jget() {
 
   console.log("in jget");
-  // (A) FETCH REQUEST
+  // (1) FETCH REQUEST
   fetch("sample.json")
-  // (B) RETURN SERVER RESPONSE AS TEXT
+  // (2) RETURN SERVER RESPONSE AS TEXT
   .then((result) => {
           console.log("surveryanswers");
           console.log(result);
@@ -50,7 +50,7 @@ function jget() {
           console.log(response);
       })
 
-  // (C) HANDLE ERROR
+  // (3) HANDLE ERROR
   .catch((error) => { console.log(error); });
 }
 

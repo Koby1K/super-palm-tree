@@ -1,7 +1,6 @@
 $("#JSONbutton").click(function(){
 
-  console.log("clickon");
-
+  console.log("clickedon");
 
   let url = "sample.json";
 

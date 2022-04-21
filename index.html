@@ -89,8 +89,15 @@
     <p>What city in the United States would you like to go see a sports game the most?</p>
 
 <!-- Text Input -->
-    <input type='text' id='text' value='' placeholder='Ex. Los Angeles, California'><br><br>
+    <input type='text' id='city' value='' placeholder='Ex. Los Angeles, California'><br><br>
     
+<!--Hidden Input-->
+<form>
+  <label for="fname">First Name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="hidden" id="custId" name="custId" value="1234">
+  <input type="submit" value="Submit">
+</form>
 <!-- Submit and Reset Buttons -->
 <button class="btn btn-secondary" id='submitbtn2'>Submit</button>
 <input type="reset">

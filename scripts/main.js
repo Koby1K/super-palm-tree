@@ -22,14 +22,13 @@ $(document).ready(function () {
     Info += "Last Name: " + $("#lname").val() + "<br/> ";
     Info += "Acquired Date and Time: " + $("#date").val() + "<br/> ";
     Info += "Phone Number: " + $("#pnum").val() + "<br/> ";
-    Info += "L Number: " + $("#lnum").val() + "<br/> ";
     Info += "User Name: " + $("#usern").val() + "<br/> ";
-    Info += "Password: " + $("#myInput").val() + "<br/> ";
+    Info += "Password: " + $("#passWord").val() + "<br/> ";
     $("#greetingOutput").html(Info);
     console.log("Info");
 
 
-  console.log("btn clicked");
+  console.log("btn#3 clickedon");
  });
 });
 
@@ -42,10 +41,10 @@ function jget() {
 
   console.log("in jget");
   // (A) FETCH REQUEST
-  fetch("data.json")
+  fetch("sample.json")
   // (B) RETURN SERVER RESPONSE AS TEXT
   .then((result) => {
-          console.log("poopy");
+          console.log("surveryanswers");
           console.log(result);
           // if (result.status != 200) { throw new Error("Bad Server Response"); }
           //return result.json();
@@ -59,4 +58,4 @@ function jget() {
   .catch((error) => { console.log(error); });
 }
 
-$('#btnLoadData').click(jget());
+$('#btnLoadJson').click(jget());

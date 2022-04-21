@@ -2,6 +2,7 @@ h2 {
     background-color: black;
     color: gray;
     padding-left: 45px;
+    font-size: 25px;
   }
   
   body {
@@ -15,10 +16,12 @@ h2 {
   }
   
   .card {
+    position: static;
     margin-left: 45px;
     margin-right: 45px;
     margin-bottom: 25px;
     padding-bottom: 25px;
+
   }
 
   #button3 {
@@ -29,4 +32,9 @@ h2 {
   #footer {
     padding: 25px;
     color: blue;
+    text-align: center;
+    background: white;
+    font-size: 25px;
+    width: auto;
+    position: absolute;
   }

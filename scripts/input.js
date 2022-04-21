@@ -1,9 +1,9 @@
 $("#button3").click(function(){
 
-  console.log("click");
+  console.log("clickon");
 
 
-  let url = "data.json";
+  let url = "sample.json";
 
   $.ajax({
 
@@ -16,10 +16,12 @@ $("#button3").click(function(){
           $("#lname").val(data.lname);
           $("#date").val(data.date);
           $("#pnum").val(data.pnum);
-          $("#lnum").val(data.lnum);
           $("#usern").val(data.usern);
-          $("#myInput").val(data.myInput);
+          $("#passWord").val(data.passWord);
+      },
 
+      failure: function (data){
+        alert("This is not a valid option")
       }
   })
 

@@ -1,8 +1,9 @@
 h2 {
-    background-color: black;
-    color: gray;
+    background-color: purple;
+    color: gold;
     padding-left: 45px;
     font-size: 25px;
+    text-align: center;
   }
   
   body {
@@ -12,7 +13,8 @@ h2 {
   form {
     padding-left: 35px;
     padding-right: 35px;
-    margin-top: 25px;  
+    margin-top: 25px; 
+    text-shadow: 0cm; 
   }
   
   .card {
@@ -21,12 +23,13 @@ h2 {
     margin-right: 45px;
     margin-bottom: 25px;
     padding-bottom: 25px;
-
+    box-shadow: inset;
   }
 
-  #button3 {
-    background-color: blue;
+  #JSONbutton {
+    background-color: black;
     margin-left: 25px;
+    box-shadow: inset;
   }
   
   #footer {

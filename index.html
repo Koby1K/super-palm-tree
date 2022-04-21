@@ -11,7 +11,7 @@
  
 <body>
   <h2>Koby's Sports Survey</h2>
-  <button class="btn btn-secondary" id='button3'>Load JSON (Click Me)</button><br><br>
+  <button class="btn btn-secondary" id='JSONbutton'>Load JSON (Click Me)</button><br><br>
 
   <!-- First Card: Personal Info -->
  <div class="card">
@@ -68,26 +68,30 @@
       <label id='nascar1'>NASCAR</label><br><br>
   
 <!-- Radio Input -->
-    <p>How much time do you usually watching your selected sports during the week?</p>
-      <input type='radio' name='five' value=''>Less than 5 hours<br>
-      <input type='radio' name='ten' value=''>5 to 15 hours<br>
-      <input type='radio' name='fifteen' value=''>More than 15 hours<br><br>
+    <div id="wrapper">
+      <label for="yes_no_radio">Have you ever been to any Major League sporting events?</label>
+    <p>
+    <input type="radio" name="yes_no" checked>Yes</input>
+    </p>
+    <p>
+    <input type="radio" name="yes_no">No</input>
+    </p>
+    </div> 
 
 <!-- Dropdown Input -->
-    <p>Have you ever been to any Major League sports games?:</p>
+    <p>How much time do you usually watching your selected sports during the week?</p>
 
       <select name="dest" id="dest">
         <option value="sel">Select</option>
-        <option value="Yay">Yes</option>
-        <option value="Nay">No</option>
-        <option value="arrowhead">Arrowhead Stadium</option>
-        <option value="att">AT&T Stadium</option>
+        <option value="Leisurely Fan">3-5 Hours</option>
+        <option value="Fanatic">6-9 Hours</option>
+        <option value="Diehard Fan">10+ Hours</option>
       </select><br><br>
   
     <p>What city in the United States would you like to go see a sports game the most?</p>
 
 <!-- Text Input -->
-    <input type='text' id='text' value='' placeholder='Ex. Rome, Italy'><br><br>
+    <input type='text' id='text' value='' placeholder='Ex. Los Angeles, California'><br><br>
     
 <!-- Submit and Reset Buttons -->
 <button class="btn btn-secondary" id='button2'>Submit</button>

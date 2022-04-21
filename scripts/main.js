@@ -11,8 +11,8 @@ selectEl.addEventListener('change', (e) => {
 
 
 $(document).ready(function () {
-  // alert("page is ready");
-  console.log("doc is ready...");
+  // alert("webpage is ready");
+  console.log("webpage is up and running...");
 
   let Info = "";
 
@@ -28,13 +28,12 @@ $(document).ready(function () {
     console.log("Info");
 
 
-  console.log("btn#3 clickedon");
+  console.log("JSONbutton clickedon");
  });
 });
 
 
-// $.getJSON('#button3', sample.json, function(data) {
-//   //do stuff with your data here
+// $.getJSON('#JSONbutton', sample.json, function(data) {
 // });
 
 function jget() {
@@ -46,9 +45,6 @@ function jget() {
   .then((result) => {
           console.log("surveryanswers");
           console.log(result);
-          // if (result.status != 200) { throw new Error("Bad Server Response"); }
-          //return result.json();
-          // data = result.json();
       })
       .then((response) => {
           console.log(response);
@@ -58,4 +54,4 @@ function jget() {
   .catch((error) => { console.log(error); });
 }
 
-$('#btnLoadJson').click(jget());
+$('#loadJSONbtn').click(jget());
